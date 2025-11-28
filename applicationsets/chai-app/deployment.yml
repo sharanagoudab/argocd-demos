@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: chai-app
 spec:
-  replicas: 7
+  replicas: 3
   selector:
     matchLabels:
       app: chai-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: chai-app
-        image: trainwithshubham/chai-devops:latest12
+        image: trainwithshubham/chai-devops:latest
         ports:
         - containerPort: 80
         env:
